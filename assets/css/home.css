@@ -1,0 +1,389 @@
+#menu {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin-left: 3%;
+  margin-top: 40px;
+  position: fixed;
+}
+
+#h1 {
+  font-family: "Domine";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 46px;
+  margin-bottom: 30px;
+  text-decoration: underline;
+  text-decoration-color: #1fb8ff;
+}
+
+#description {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: grey;
+  margin-bottom: 30px;
+}
+
+#searchbox {
+  width: 100%;
+  height: 30px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid grey;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#search {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: grey;
+  margin-left: 7px;
+  margin-top: 2px;
+}
+
+#searchglass {
+  margin-right: 5px;
+  margin-top: 4px;
+}
+
+.type {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+.typetext {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  margin-left: 15px;
+  margin-top: 3px;
+}
+
+.indent {
+  margin-left: 30px;
+}
+
+.checkbox {
+  width: 22px;
+  height: 22px;
+  background-color: white;
+  border-radius: 2px;
+  border: 1px solid;
+}
+
+.check {
+  position: absolute;
+  margin-left: 4px;
+  margin-top: -8px;
+  display: none;
+  pointer-events: none;
+  user-select: none;
+}
+
+#pagebuttons {
+  margin-top: 20px;
+}
+
+.pagebutton {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-decoration:none;
+  color:black;
+}
+
+/* add a empty string after the elment with class .slide-left-right */
+.button1::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width .3s ease, background-color .3s ease; /* .5 seonds for changes to the width and background-color */
+  -webkit-transition: width .3s ease, background-color .3s ease; /* Chrome and Safari */
+  -moz-transition: width .3s ease, background-color .3s ease; /* FireFox */
+}
+
+/* Change the width and background on hover, aka sliding out */
+.button1:hover::after {
+  width: 22%;
+  background: #1fb8ff;
+}
+
+/* add a empty string after the elment with class .slide-left-right */
+.button2::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width .3s ease, background-color .3s ease; /* .5 seonds for changes to the width and background-color */
+  -webkit-transition: width .3s ease, background-color .3s ease; /* Chrome and Safari */
+  -moz-transition: width .3s ease, background-color .3s ease; /* FireFox */
+}
+
+/* Change the width and background on hover, aka sliding out */
+.button2:hover::after {
+  width: 17%;
+  background: #1fb8ff;
+}
+
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-shadow: none;
+  color: black;
+}
+
+#boxes {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  width: 70%;
+  grid-row-gap: 60px;
+  padding-bottom: 60px;
+}
+
+.box {
+  width: 225px;
+  height: 225px;
+  background-color: #FFF8B8;
+  box-shadow: -4px 4px 15px grey;
+  padding: 25px;
+}
+
+.activity {
+  font-family: "Lato";
+  font-style: "bold";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  text-decoration:none;
+  display: inline-block;
+  color: black;
+}
+
+/* add a empty string after the element with class .slide-left-right */
+.lightblue::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width .3s ease, background-color .3s ease; /* .5 seonds for changes to the width and background-color */
+  -webkit-transition: width .3s ease, background-color .3s ease; /* Chrome and Safari */
+  -moz-transition: width .3s ease, background-color .3s ease; /* FireFox */
+}
+
+/* Change the width and background on hover, aka sliding out */
+.type:hover > .lightblue::after {
+  width: 100%;
+  background: #1fb8ff;
+}
+
+/* add a empty string after the element with class .slide-left-right */
+.red::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width .3s ease, background-color .3s ease; /* .5 seonds for changes to the width and background-color */
+  -webkit-transition: width .3s ease, background-color .3s ease; /* Chrome and Safari */
+  -moz-transition: width .3s ease, background-color .3s ease; /* FireFox */
+}
+
+/* Change the width and background on hover, aka sliding out */
+.box:hover > .red::after {
+  width: 100%;
+  background: red;
+}
+
+.type:hover > .red::after {
+  width: 100%;
+  background: red;
+}
+
+/* add a empty string after the element with class .slide-left-right */
+.blue::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width .3s ease, background-color .3s ease; /* .5 seonds for changes to the width and background-color */
+  -webkit-transition: width .3s ease, background-color .3s ease; /* Chrome and Safari */
+  -moz-transition: width .3s ease, background-color .3s ease; /* FireFox */
+}
+
+/* Change the width and background on hover, aka sliding out */
+.box:hover > .blue::after {
+  width: 100%;
+  background: #3575D5;
+}
+
+.type:hover > .blue::after {
+  width: 100%;
+  background: #3575D5;
+}
+
+/* add a empty string after the element with class .slide-left-right */
+.purple::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width .3s ease, background-color .3s ease; /* .5 seonds for changes to the width and background-color */
+  -webkit-transition: width .3s ease, background-color .3s ease; /* Chrome and Safari */
+  -moz-transition: width .3s ease, background-color .3s ease; /* FireFox */
+}
+
+/* Change the width and background on hover, aka sliding out */
+.box:hover > .purple::after {
+  width: 100%;
+  background: #8E35D5;
+}
+
+.type:hover > .purple::after {
+  width: 100%;
+  background: #8E35D5;
+}
+
+/* add a empty string after the element with class .slide-left-right */
+.green::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width .3s ease, background-color .3s ease; /* .5 seonds for changes to the width and background-color */
+  -webkit-transition: width .3s ease, background-color .3s ease; /* Chrome and Safari */
+  -moz-transition: width .3s ease, background-color .3s ease; /* FireFox */
+}
+
+/* Change the width and background on hover, aka sliding out */
+.box:hover > .green::after {
+  width: 100%;
+  background: #17bf49;
+}
+
+.type:hover > .green::after {
+  width: 100%;
+  background: #17bf49;
+}
+
+/* add a empty string after the element with class .slide-left-right */
+.orange::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width .3s ease, background-color .3s ease; /* .5 seonds for changes to the width and background-color */
+  -webkit-transition: width .3s ease, background-color .3s ease; /* Chrome and Safari */
+  -moz-transition: width .3s ease, background-color .3s ease; /* FireFox */
+}
+
+/* Change the width and background on hover, aka sliding out */
+.box:hover > .orange::after {
+  width: 100%;
+  background: #fc8c03;
+}
+
+.type:hover > .orange::after {
+  width: 100%;
+  background: #fc8c03;
+}
+
+.description {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 12px;
+}
+
+.when {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 6px;
+}
+
+.where {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 6px;
+}
+
+.contact {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 6px;
+}
+
+.learnmore {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.pin {
+  position: relative;
+  top: -45px;
+  left: 100px;
+}
+
+.topdot {
+  height: 25px;
+  width: 25px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: 10px;
+  box-shadow: -1px 1px 5px grey;
+}
+
+.bottomdot {
+  height: 25px;
+  width: 25px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: 10px;
+}
